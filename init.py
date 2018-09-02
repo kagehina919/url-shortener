@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request, redirect, flash, send_from_directory
+from flask import Flask, render_template, request, redirect, flash, send_from_directory, session
 from db_connect import connection
 from shorten import shorten_url
 from wtforms import Form, TextField, PasswordField
 from passlib.handlers.sha2_crypt import sha256_crypt
 import os
+
 
 app = Flask(__name__)
 default = "true"
@@ -48,6 +49,9 @@ def login():
         print(passw[0])
         print(password_form)
         if password_form == passw[0]:
+            session['logged_in'] = True
+            session['username'] = request.form['username']
+            flash("you are logged in")
             return render_template("urls.html")
     else:
         flash("invalid credentials!!")
@@ -55,6 +59,7 @@ def login():
 
 @app.route('/shortener/', methods=['GET', 'POST'])
 def shorten():
+    print(session['username'])
     long = request.form.get('long_url')
     c, conn = connection()
     insert_command = "INSERT INTO urls (long_url, short_url) VALUES ('%s', '%s')" % (long, default)
@@ -73,6 +78,10 @@ def shorten():
        SET short_url = %s
        WHERE id = %s
     """, (short, id))
+    insert = "UPDATE urls SET username = '" +session['username']+ "' WHERE id = '" + str(id[0]) + "'"
+    print(insert)
+    c.execute(insert)
+
     conn.commit()
     return short
 
