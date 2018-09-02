@@ -63,7 +63,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../quiz/templates/html.html" afterPath="$PROJECT_DIR$/../quiz/templates/html.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../quiz/templates/login.html" afterPath="$PROJECT_DIR$/../quiz/templates/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../quiz/templates/register.html" afterPath="$PROJECT_DIR$/../quiz/templates/register.html" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+>>>>>>> b8abb6cf8cfaa346697a1e90f95cc797a66395a5
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -156,6 +160,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -200,7 +214,10 @@
         <option value="$PROJECT_DIR$/init.py" />
         <option value="$PROJECT_DIR$/templates/urls.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Procfile" />
+=======
+>>>>>>> b8abb6cf8cfaa346697a1e90f95cc797a66395a5
       </list>
     </option>
   </component>
@@ -949,6 +966,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
       </provider>

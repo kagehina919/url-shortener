@@ -2,5 +2,10 @@ Flask>=1.0.2
 Jinja2>=2.10
 mysqlclient>=1.3.7
 passlib>=1.7.1
+<<<<<<< HEAD
+=======
+requests>=2.9.1
+sessioninstaller>=0.0.0
+>>>>>>> b8abb6cf8cfaa346697a1e90f95cc797a66395a5
 Werkzeug>=0.14.1
 WTForms>=2.1
